@@ -4,3 +4,15 @@
     margin-bottom: 20px;
     border: 0px solid transparent; 
 }
+.navbar-inverse .navbar-brand
+{
+    color: white;
+}
+a.btn.btn-primary.pro:hover
+{
+	background-color: #428bca;
+	
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}

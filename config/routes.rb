@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   get "investir" => 'static_pages#investir'
 
   get "contact" => 'static_pages#contact'
+
+  get "documents" => 'static_pages#documents'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
