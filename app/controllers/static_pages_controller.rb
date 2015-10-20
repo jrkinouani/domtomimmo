@@ -9,9 +9,13 @@ class StaticPagesController < ApplicationController
   end
 
   def contact
-  	
   end
+  
   def documents
   	
+  end
+  
+  def galerie
+    
   end
 end
