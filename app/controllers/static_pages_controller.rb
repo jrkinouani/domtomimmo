@@ -1,5 +1,8 @@
 class StaticPagesController < ApplicationController
   def home
+    @logement = Logement.new 
+    @logements = Logement.all
+
   end
 
   def apropos
