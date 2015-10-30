@@ -1,6 +1,6 @@
 class StaticPagesController < ApplicationController
   def home
-    @logement = Logement.new 
+    
     @logements = Logement.all
 
   end
@@ -19,6 +19,6 @@ class StaticPagesController < ApplicationController
   end
   
   def galerie
-    
+    @logements = Logement.all
   end
 end
