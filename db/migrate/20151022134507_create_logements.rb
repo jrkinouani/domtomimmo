@@ -9,7 +9,7 @@ class CreateLogements < ActiveRecord::Migration
       t.string :country
       t.string :street
       t.string :street_number
-      t.integer :capacity
+      t.integer :category
       t.text :name
       t.string :image
 

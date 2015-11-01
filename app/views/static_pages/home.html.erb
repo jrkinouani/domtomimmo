@@ -16,7 +16,7 @@
                     <img src="images5.jpeg" alt="">
                     <div class="caption">
                         <h3><%= logement.desc_home %> </h3>
-                        
+                       
                         <p>
                             <a href="#" class="btn btn-primary"><%= logement.price %> €</a> <a href="galerie.html" class="btn btn-default">Plus d'infos</a>
                         </p>
@@ -28,6 +28,15 @@
         </div>
         <hr>
 
+         <%= form_tag(search_path, method: :get, id: "search-form", class: "navbar-form navbar-left", role: "search" ) do  %>
+            <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12" id="search">
+                <%= text_field_tag 'city', nil, id: "q", placeholder: "Où souhaitez-vous nager ?" %>
+            </div>
+              <div class="col-lg-2 col-md-2 col-sm-2  col-offset-1 col-xs-11">
+                <%= submit_tag 'Rechercher', class: "btn btn-primary btn-block", type: "hidden" %>
+              </div>
+         <% end %>
+      
        
         
 

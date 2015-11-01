@@ -20,5 +20,6 @@ class StaticPagesController < ApplicationController
   
   def galerie
     @logements = Logement.all
+    
   end
 end
