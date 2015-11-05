@@ -13,7 +13,7 @@ gem 'devise'
 gem 'rails_admin'
 
 gem 'carrierwave'
-gem "fog-aws"
+gem "fog"
 gem 'rmagick', require: 'RMagick'
 
 group :development, :test do

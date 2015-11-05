@@ -70,11 +70,17 @@ GEM
     erubis (2.7.0)
     excon (0.45.3)
     execjs (2.6.0)
-    fog-aws (0.1.2)
-      fog-core (~> 1.27)
-      fog-json (~> 1.0)
-      fog-xml (~> 0.1)
-      ipaddress (~> 0.8)
+    fog (1.23.0)
+      fog-brightbox
+      fog-core (~> 1.23)
+      fog-json
+      fog-softlayer
+      ipaddress (~> 0.5)
+      nokogiri (~> 1.5, >= 1.5.11)
+    fog-brightbox (0.7.1)
+      fog-core (~> 1.22)
+      fog-json
+      inflecto (~> 0.0.2)
     fog-core (1.30.0)
       builder
       excon (~> 0.45)
@@ -85,9 +91,9 @@ GEM
     fog-json (1.0.1)
       fog-core (~> 1.0)
       multi_json (~> 1.0)
-    fog-xml (0.1.2)
+    fog-softlayer (0.4.0)
       fog-core
-      nokogiri (~> 1.5, >= 1.5.11)
+      fog-json
     font-awesome-rails (4.4.0.0)
       railties (>= 3.2, < 5.0)
     formatador (0.2.5)
@@ -96,6 +102,7 @@ GEM
     haml (4.0.7)
       tilt
     i18n (0.7.0)
+    inflecto (0.0.2)
     ipaddress (0.8.0)
     jbuilder (2.2.3)
       activesupport (>= 3.0.0, < 5)
@@ -228,7 +235,7 @@ DEPENDENCIES
   carrierwave
   coffee-rails (= 4.1.0)
   devise
-  fog-aws
+  fog
   jbuilder (= 2.2.3)
   jquery-rails (= 4.0.3)
   pg (= 0.17.1)
