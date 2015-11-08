@@ -1,16 +1,38 @@
-CarrierWave.configure do |config|
-  #config.fog_provider = 'fog/aws'                        # required
-  config.fog_credentials = {
-    provider:              'AWS',                        # required
-    aws_access_key_id:     'AKIAIBEND5HX6QBT4ZXA',                        # required
-    aws_secret_access_key: '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',                        # required
-    region:                'eu-west-1',                  # optional, defaults to 'us-east-1'
-    host:                  's3.example.com',             # optional, defaults to nil
-    endpoint:              'https://s3.example.com:8080' # optional, defaults to nil
-  }
-  
-  config.fog_directory  = 'domtomimmo'                          # required
-  config.fog_public     = false                                        # optional, defaults to true
-  config.fog_attributes = { 'Cache-Control' => "max-age=#{365.day.to_i}" } # optional, defaults to {}
-end
+if Rails.env == 'development'
 
+  CarrierWave.configure do |config|
+    config.fog_credentials = {
+      provider:              'AWS',
+      aws_access_key_id:     "AKIAJ7CSTU26KFM7JWOQ",
+      aws_secret_access_key: '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',
+      region:                'eu-west-1'
+    }
+    
+    config.fog_directory  = 'domtomimmodebug'
+    config.fog_public     = false
+    config.fog_attributes = { 'Cache-Control' => "max-age=#{365.day.to_i}" }
+  end
+
+  ##########################################
+  # /!\ Temporary patch
+  # disable CA-certificate check on Mac OSX
+  ##########################################
+  require 'excon'
+  Excon.ssl_verify_peer = false
+
+elsif Rails.env == 'development'
+
+  CarrierWave.configure do |config|
+    config.fog_credentials = {
+      provider:              'AWS',
+      aws_access_key_id:     "AKIAJ5IXHS5SW2335CJQ",
+      aws_secret_access_key: '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',
+      region:                'eu-west-1'
+    }
+    
+    config.fog_directory  = 'domtomimmoproduction'
+    config.fog_public     = false
+    config.fog_attributes = { 'Cache-Control' => "max-age=#{365.day.to_i}" }
+  end
+
+end
