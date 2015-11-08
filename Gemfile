@@ -12,6 +12,10 @@ gem 'sdoc',         '0.4.0', group: :doc
 gem 'devise'
 gem 'rails_admin'
 
+gem 'carrierwave'
+gem "fog"
+gem 'rmagick', require: 'RMagick'
+
 group :development, :test do
   gem 'sqlite3',     '1.3.9'
   gem 'byebug',      '3.4.0'
