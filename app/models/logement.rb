@@ -1,8 +1,9 @@
 class Logement < ActiveRecord::Base
+	
 
-	mount_uploader :image, ImageUploader
+	 mount_uploader :image, ImageUploader
 
-  rails_admin do
+	 rails_admin do
     list do
       field :id
       field :city
@@ -24,5 +25,5 @@ class Logement < ActiveRecord::Base
       field :capacity
       field :image, :carrierwave
     end
-  end
+  end	
 end
