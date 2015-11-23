@@ -20,7 +20,7 @@ a.btn.btn-primary.pro:hover
 {
 	color: black;
 }
-.thumbnail>img, .thumbnail a>img, .carousel-inner>.item>img, .carousel-inner>.item>a>img {
+.thumbnail>img, .thumbnail a>img{
     display: block;
     max-width: 250px;
     height: 200px;
