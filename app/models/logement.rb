@@ -1,5 +1,5 @@
 class Logement < ActiveRecord::Base
-	
+	validates :desc_home, length: { maximum: 100 }
 
 	 mount_uploader :image, ImageUploader
 
