@@ -1,5 +1,8 @@
 <div class="row">
-  <div class="col-md-8">
+    <div class="col-md-12">
+      <h3><%= @logement.desc_home.capitalize %> </h3>
+    </div>  
+  <div class="col-md-8"> 
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -56,12 +59,20 @@
         <span class="sr-only">Next</span>
       </a>
    </div>
-   <div class="row">
-  
-   <h3><%= @logement.desc_home %> </h3>
-   
- 
-</div>
+     <div class="row">
+       <div class="col-md-12" id="zone_desc">
+        <h3>Description du logement / Nbr de pièces <%= @logement.capacity %></h3>
+        <h4><%= @logement.desc.capitalize %></h4>
+       </div> 
+
+     </div>
+
+     <div class="row">
+      <div class="col-md-12" id="zone_desc">
+          <h5>Contacter l'agence pour cette annonce: 02 62 56 7 34</h5>
+      </div>    
+     </div>
+
   </div>
 
   <div class="col-md-4" id="pub_investir">
