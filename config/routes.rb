@@ -14,6 +14,8 @@ Rails.application.routes.draw do
   get "documents" => 'static_pages#documents'
 
   get "galerie" => 'static_pages#galerie'
+
+  get '/search' , to: 'logement#find_logements'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

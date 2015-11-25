@@ -15,6 +15,7 @@
                 <div class="thumbnail">
                     <img src="<%= logement.image.url %>" alt="">
                     <div class="caption">
+                        <h3><%= logement.city %></h3>
                         <h4 class="desc_home"><%= logement.desc_home %> </h4>
                         
                         <p>
@@ -28,22 +29,6 @@
             
         </div>
         <hr>
-
-       <!--/moteur -->
-
-            <!--<% unless (controller_path == 'static_pages' && action_name == 'home') %>-->
-
-             <%= form_tag(search_path, method: :get, id: "search-form", class: "navbar-form navbar-right", role: "search" ) do  %>
-            <div  id="search" >
-                <%= text_field_tag 'city', nil, placeholder: "Rechercher un logement",  type: "text", class:"form-control"%>
-            </div>
-              
-         <% end %>
-         
-      <!--<% end %>-->
-
-       <!--fin moteur -->
-        
 
 </div>
     <!-- /.container -->
