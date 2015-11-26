@@ -59,12 +59,18 @@
         <span class="sr-only">Next</span>
       </a>
    </div>
+
      <div class="row">
        <div class="col-md-12" id="zone_desc">
         <h3>Description du logement / Nbr de pièces <%= @logement.capacity %></h3>
         <h4><%= @logement.desc.capitalize %></h4>
        </div> 
+     </div>
 
+     <div class="row">
+      <div class="col-md-12">
+       <h4><%= @logement.surface %> m2/ <%= @logement.bedroom %> Chambres /<%= @logement.air_conditioning %>Air conditionné </h4>
+      </div>
      </div>
 
      <div class="row">

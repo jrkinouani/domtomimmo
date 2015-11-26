@@ -47,16 +47,19 @@ ActiveRecord::Schema.define(version: 20151117072135) do
     t.string   "country"
     t.string   "street"
     t.string   "street_number"
+    t.integer  "surface"
     t.integer  "capacity"
+    t.integer  "bedroom"
     t.text     "name"
+    t.string   "air_conditioning"
     t.string   "image"
     t.string   "image1"
     t.string   "image2"
     t.string   "image3"
     t.string   "image4"
     t.string   "image5"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
   end
 
 end

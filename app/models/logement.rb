@@ -27,7 +27,10 @@ class Logement < ActiveRecord::Base
       field :country
       field :street
       field :street_number
+      field :surface
       field :capacity
+      field :bedroom
+      field :air_conditioning
       field :image, :carrierwave
       field :image1, :carrierwave
       field :image2, :carrierwave

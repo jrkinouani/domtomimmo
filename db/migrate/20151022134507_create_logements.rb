@@ -9,8 +9,11 @@
       t.string :country
       t.string :street
       t.string :street_number
+      t.integer :surface
       t.integer :capacity
+      t.integer :bedroom
       t.text :name
+      t.string :air_conditioning
       t.string :image
       t.string :image1
       t.string :image2
