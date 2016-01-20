@@ -2,11 +2,11 @@ body
 {
     background-color: #edefed;
      position: relative;
-
+     height: 100%;
 }
 html
 {
-  height: auto;
+  height: 100%;
 }
 .navbar {
     position: relative;
@@ -47,5 +47,5 @@ h4.desc_home
 {
      height:50px;
   position: absolute;
-  margin-top: 30px;
+  bottom: 0px;
 }
