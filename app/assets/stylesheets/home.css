@@ -35,9 +35,12 @@ h5.price
     display: block;
     max-width: 250px;
     height: 200px;
-    padding-bottom: 10px!important;
+    
 }
-
+.thumbnail
+{
+  padding-bottom: 10px;
+}
 .caption
 {
 	height: 110px;	
