@@ -24,6 +24,10 @@ a.btn.btn-primary.pro:hover
 	background-color: #428bca;
 	
 }
+.thumbnail .caption {
+    padding: 0px;
+    color: #333;
+}
 .navbar-inverse .navbar-nav>li>a {
     color: white;
 }
@@ -35,8 +39,7 @@ h5.price
     display: block;
     max-width: 250px;
     height: 200px;
-    padding-bottom: 20px!important;
-}
+   
 
 .caption
 {
