@@ -38,7 +38,7 @@ h5.price
 }
 .thumbnail
 {
-  padding-bottom: 10px!;
+  padding-bottom: 10px!important;
 }
 .caption
 {
