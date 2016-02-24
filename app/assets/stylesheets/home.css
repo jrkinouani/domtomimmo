@@ -41,6 +41,10 @@ h5.price
     height: 200px;
    
 }
+.thumbnail
+{
+  padding: 10px!important;
+}
 .caption
 {
 	height: 120px!important;	
