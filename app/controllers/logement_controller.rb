@@ -11,7 +11,7 @@ class LogementController < ApplicationController
 
 	    else
 
-	     render "static_pages/apropos"
+	     render "static_pages/nocity"
 	    end
     end
 end

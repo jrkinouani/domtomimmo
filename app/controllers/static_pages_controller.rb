@@ -17,6 +17,9 @@ class StaticPagesController < ApplicationController
   def documents
   	
   end
+  def nocity
+    
+  end
   
   def galerie
     @logement = Logement.find(params[:id])
