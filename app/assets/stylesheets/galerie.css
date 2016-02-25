@@ -14,9 +14,8 @@
 	font-weight: 200;
 }
 
-hr {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: 0;
-    border-top: 1px solid black;
+
+footer {
+    padding: 25px 0;
+    
 }

@@ -49,11 +49,16 @@
  <div class="container">
 
 <%= yield %>
-      <div class="footer">
-            <div class="inner">
-              <p> Copyright &copy; Domtom Immo 2015  <%= link_to "Notre agence" , apropos_path %> -  <%= link_to "Investir" , investir_path %> - <%= link_to "Documents", documents_path %> - <%= link_to "Contact" ,  contact_path %></p>
+<footer>
+        <div class="container">
+            <div class="row">
+                    <p class="inner"> Copyright &copy; Domtom Immo 2015  <%= link_to "Notre agence" , apropos_path %> -  <%= link_to "Investir" , investir_path %> - <%= link_to "Documents", documents_path %> - <%= link_to "Contact" ,  contact_path %></p>  
             </div>
-      </div>
+        </div>
+    </footer>
+      <!--<div class="footer"> 
+              <p class="inner"> Copyright &copy; Domtom Immo 2015  <%= link_to "Notre agence" , apropos_path %> -  <%= link_to "Investir" , investir_path %> - <%= link_to "Documents", documents_path %> - <%= link_to "Contact" ,  contact_path %></p>  
+      </div>-->
 </div>
 </body>
 </html>

@@ -1,13 +1,9 @@
 body
 {
     background-color: #edefed;
-     position: relative;
-     height: 100%;
+     
 }
-html
-{
-  height: 100%;
-}
+
 .navbar 
 {
     position: relative;
@@ -43,18 +39,6 @@ h5.price
 h4.desc_home
 {
 	font-weight: 200;
-}
-.footer
-{
-   position: absolute;
-  bottom: 0px;
-  padding-bottom: 0px;
-}
-.inner, 
-{
-     height:50px;
-  position: absolute;
- 
 }
 .phone
 {
