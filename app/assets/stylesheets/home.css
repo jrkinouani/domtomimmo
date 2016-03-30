@@ -3,7 +3,17 @@ body
     background-color: #edefed;
      
 }
-
+input#city.form-control
+{
+  max-width: 600px;
+  min-width: 400px;
+  height: 50px;
+}
+button.btn.btn-default
+{
+   height: 50px;
+   width: 90px;
+}
 .navbar 
 {
     position: relative;
