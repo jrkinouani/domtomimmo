@@ -145,7 +145,7 @@ GEM
       multi_json (~> 1.10)
     fog-local (0.3.0)
       fog-core (~> 1.27)
-    fog-openstack (0.1.12)
+    fog-openstack (0.1.15)
       fog-core (>= 1.40)
       fog-json (>= 1.0)
       ipaddress (>= 0.8)
@@ -234,12 +234,10 @@ GEM
     minitest (5.9.1)
     multi_json (1.12.1)
     nested_form (0.3.2)
-    nokogiri (1.6.8)
+    nokogiri (1.6.8.1)
       mini_portile2 (~> 2.1.0)
-      pkg-config (~> 1.1.7)
     orm_adapter (0.5.0)
     pg (0.17.1)
-    pkg-config (1.1.7)
     rack (1.6.4)
     rack-pjax (1.0.0)
       nokogiri (~> 1.5)
@@ -295,7 +293,7 @@ GEM
       trollop
     rdoc (4.2.2)
       json (~> 1.4)
-    remotipart (1.3.0)
+    remotipart (1.3.1)
     responders (2.3.0)
       railties (>= 4.2.0, < 5.1)
     rmagick (2.16.0)
@@ -364,4 +362,4 @@ DEPENDENCIES
   web-console (= 2.0.0.beta3)
 
 BUNDLED WITH
-   1.12.5
+   1.13.2
