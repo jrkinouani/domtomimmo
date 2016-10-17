@@ -6,7 +6,7 @@
                 <%= text_field_tag 'city', nil, placeholder: "Trouver un logement",  type: "text", class:"form-control"%>
                  <button type="submit" class="btn btn-default">Valider</button>
             </div>
-              
+
          <% end %>
     </div>
   </div>
@@ -21,24 +21,24 @@
 
         <!-- Page Features -->
         <div class="row text-center">
-          <% @logements.each do |logement| %> <!--link_to "galerie photo" , :id -> logement.id-->   
+          <% @logements.each do |logement| %> <!--link_to "galerie photo" , :id -> logement.id-->
             <div class="col-md-3 col-sm-4 hero-feature">
                 <div class="thumbnail">
                     <img src="<%= logement.image.url %>" alt="" class="img_home">
                     <div class="caption">
                         <h5 class="desc_home"><%= logement.city.capitalize %>, <%= logement.desc_home %> </h5>
-                        
+
                         <p>
                             <h5 class="price"><%= logement.price %> € </h5><%= link_to "Plus d'infos" ,galerie_path(:id => logement.id)%>
-                            
+
                         </p>
                     </div>
                 </div>
             </div>
           <% end %>
-            
+
         </div>
-       
-        
+
+
 </div>
     <!-- /.container -->
