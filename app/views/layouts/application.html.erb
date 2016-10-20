@@ -1,67 +1,70 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Domtomimmo</title>
-   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <title>Respon</title>
+    <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= csrf_meta_tags %>
+    <link <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <%= link_to "DomTom Immo", root_path, :class => "navbar-brand" %>
+  <body>
 
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "Investir" , investir_path %></li>
-        <li><%= link_to "Notre agence" , apropos_path %></li>
-        <!--<li><%= link_to "Contact" ,  contact_path %></li>-->
-         <li class="number "> <img src="phone.png" class="phone" />  02 62 02 43 31</li>
-        <li><a href="documents.html" class="btn btn-primary pro">Propriétaire</a></li>
+    <!-- Static navbar -->
+<nav class="navbar navbar-default">
+<div class="container-fluid">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+   <!--<%= link_to root_path, class: 'navbar-brand' do  %>
+  <%= image_tag 'public/LOGO.gif', class: 'navbar-brand'  %>
+   <% end %>-->
+   <%= link_to "DomTom Immo", root_path, :class => "navbar-brand" %>
 
-          </ul>
-
-          <!--<form class="navbar-form navbar-right">
-            <input type="text" class="form-control" placeholder="Rechercher un F3...">
-             <button type="submit" class="btn btn-default">Valider</button>
-          </form>-->
-        </div>
-      </div>
-    </nav>
-
- <div class="container">
-
-<%= yield %>
-
-<div class="row" id="footer">
-
-  <footer>
-        <p class="pull-right"><a href="#">revenir en haut</a></p>
-        <span class="00">© 2015 Domtomimmo . <a href="apropos.html">Notre agence</a></span>
-      </footer>
-
+  <!--<a class="navbar-brand" href="#">Brand</a>-->
 </div>
-<!--<footer>
-        <div class="container">
-            <div class="row">
-                    <p class="inner"> Copyright &copy; Domtom Immo 2015  <%= link_to "Notre agence" , apropos_path %> -  <%= link_to "Investir" , investir_path %> - <%= link_to "Documents", documents_path %> - <%= link_to "Contact" ,  contact_path %></p>
+
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+  <ul class="nav navbar-nav navbar-right">
+
+    <%= form_tag(search_path, method: :get, id: "search-form", role: "search",class:"navbar-form navbar-left" ) do  %>
+            <div  id="search" >
+                <%= text_field_tag 'city', nil, placeholder: "Trouver un logement par ville",  type: "text", class:"form-control"%>
+                 <button type="submit" class="btn btn-default">Valider</button>
             </div>
-        </div>
-</footer>-->
-      <!--<div class="footer">
-              <p class="inner"> Copyright &copy; Domtom Immo 2015  <%= link_to "Notre agence" , apropos_path %> -  <%= link_to "Investir" , investir_path %> - <%= link_to "Documents", documents_path %> - <%= link_to "Contact" ,  contact_path %></p>
-      </div>-->
-</div>
-</body>
+
+         <% end %>
+
+    <!--<form class="navbar-form navbar-left">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>-->
+      <!--<li><%= link_to "Investir" , investir_path %></li>-->
+       <li><%= link_to "Notre agence" , apropos_path %></li>
+        <li class="number "> <img src="phone.png" class="phone" />   02 62 02 43 31</li>
+
+    <!--<li><a href="documents.html" class="btn btn-primary pro">Propriétaire</a></li>-->
+  </ul>
+</div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
+</nav>
+
+    <%= yield %>
+  
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  </body>
 </html>

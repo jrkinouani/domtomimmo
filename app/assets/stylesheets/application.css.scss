@@ -1,66 +1,49 @@
  @import "bootstrap-sprockets" ;
  @import "bootstrap" ;
- body
- {
-     background-color: #edefed;
-     min-height: 2000px;
- }
- input#city.form-control
- {
-   max-width: 600px;
-   min-width: 400px;
-   height: 50px;
- }
+
  button.btn.btn-default
  {
     height: 50px;
     width: 90px;
  }
+ .navbar-default {
+    background-color: black;
+    border-color: black;
+}
  .navbar
  {
      position: relative;
      min-height: 50px;
      margin-bottom: 20px;
      border: 0px solid transparent;
+
  }
- .navbar-inverse .navbar-brand
+ .navbar-default .navbar-brand
  {
      color: white;
+     font-size: 35px;
+ }
+ .btn.btn-primary
+ {
+ 	background-color: #428bca;
+  margin-top: 10px;
  }
  a.btn.btn-primary.pro:hover
  {
  	background-color: #428bca;
 
  }
- .navbar-inverse .navbar-nav>li>a {
+ .navbar-default .navbar-nav>li>a {
      color: white;
  }
-
- h5.price
- {
- 	color: black;
- }
- .thumbnail>img, .thumbnail a>img{
-     display: block;
-     height: 200px;
- }
- img.img_home
- {
-   min-width: 10%!important;
- }
- .caption
- {
- 	height: 120px;
-
- }
- h5.desc_home
- {
- 	font-weight: 200;
-    text-align: left;
+ .navbar-middle{
+     flex: 1;
+     justify-content: center;
+     order: 2;
+     display: none;
  }
  img.phone
  {
-
    height: 20px;
    width: 20px
  }
@@ -70,21 +53,16 @@
    color: white;
    margin-right: 5px;
  }
- #footer
- {
-   height: 60px;
-  padding-left: 15px;
-   margin-top: 20px;
- }
- h4.text-footer
- {
-   padding-top: 100px;
- }
- .pull-felt
- {
-   float: left;
- }
- a:link
- {
-  text-decoration:none;
- }
+.form-control
+{
+  height: 50px;
+  min-width: 300px;
+  max-width: 450px;
+}
+#zone
+{
+  min-width: 340px;
+  border: 5px solid #ddd;
+  border-radius: 1px;
+
+}

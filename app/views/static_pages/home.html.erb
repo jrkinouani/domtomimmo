@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="row">
+  <!--<div class="row">
     <div class=" col-lg-offset-4 col-lg-6 col-md-8 col-sm-offset-5 col-sm-offset-3 col-xs-10 ">
         <%= form_tag(search_path, method: :get, id: "search-form", role: "search",class:"form-inline" ) do  %>
             <div  id="search" >
@@ -9,7 +9,7 @@
 
          <% end %>
     </div>
-  </div>
+  </div>-->
 
         <!-- Title -->
         <div class="row">
@@ -20,9 +20,41 @@
         <!-- /.row -->
 
         <!-- Page Features -->
-        <div class="row text-center">
+        <div class="row">
           <% @logements.each do |logement| %> <!--link_to "galerie photo" , :id -> logement.id-->
-            <div class="col-md-3 col-sm-4 hero-feature">
+            <div class="col-md-4 col-sm-4 hero-feature">
+                <div class="thumbnail">
+                    <img src="<%= logement.image.url %>" alt="" class="img_home">
+                    <div class="caption">
+                        <h5 class="desc_home"><%= logement.city.capitalize %>, <%= logement.desc_home %> </h5>
+
+                        <p>
+                            <h5 class="price"><%= logement.price %> € </h5><%= link_to "Plus d'infos" ,galerie_path(:id => logement.id)%>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+          <% end %>
+
+          <% @logements.each do |logement| %> <!--link_to "galerie photo" , :id -> logement.id-->
+            <div class="col-md-4 col-sm-4 hero-feature">
+                <div class="thumbnail">
+                    <img src="<%= logement.image.url %>" alt="" class="img_home">
+                    <div class="caption">
+                        <h5 class="desc_home"><%= logement.city.capitalize %>, <%= logement.desc_home %> </h5>
+
+                        <p>
+                            <h5 class="price"><%= logement.price %> € </h5><%= link_to "Plus d'infos" ,galerie_path(:id => logement.id)%>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+          <% end %>
+
+          <% @logements.each do |logement| %> <!--link_to "galerie photo" , :id -> logement.id-->
+            <div class="col-md-4 col-sm-4 hero-feature">
                 <div class="thumbnail">
                     <img src="<%= logement.image.url %>" alt="" class="img_home">
                     <div class="caption">
@@ -38,7 +70,8 @@
           <% end %>
 
         </div>
-
-
+      
 </div>
+
+
     <!-- /.container -->
