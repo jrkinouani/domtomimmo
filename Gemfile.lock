@@ -243,6 +243,7 @@ GEM
       mini_portile2 (~> 2.1.0)
     orm_adapter (0.5.0)
     pg (0.17.1)
+    puma (3.6.0)
     rack (1.6.4)
     rack-pjax (1.0.0)
       nokogiri (~> 1.5)
@@ -356,6 +357,7 @@ DEPENDENCIES
   jbuilder (= 2.2.3)
   jquery-rails (= 4.0.3)
   pg (= 0.17.1)
+  puma (~> 3.0)
   rails (= 4.2.2)
   rails_12factor (= 0.0.2)
   rails_admin
