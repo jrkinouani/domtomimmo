@@ -344,7 +344,7 @@ DEPENDENCIES
   byebug (= 3.4.0)
   carrierwave
   coffee-rails (= 4.1.0)
-  devise (= 1.0.0)
+  devise
   fog
   jbuilder (= 2.2.3)
   jquery-rails (= 4.0.3)
@@ -352,7 +352,7 @@ DEPENDENCIES
   puma (~> 3.0)
   rails (= 4.2.2)
   rails_12factor (= 0.0.2)
-  rails_admin
+  rails_admin (= 1.0.0)
   rmagick
   sass-rails (= 5.0.2)
   sdoc (= 0.4.0)
