@@ -13,6 +13,7 @@ gem 'jbuilder',     '2.2.3'
 gem 'sdoc',         '0.4.0', group: :doc
 
 gem 'rails_admin', '1.0.0'
+gem 'devise'
 
 gem 'carrierwave'
 gem "fog"
