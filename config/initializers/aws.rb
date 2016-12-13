@@ -1,3 +1,5 @@
+if Rails.env == 'development'
+
   CarrierWave.configure do |config|
     config.fog_credentials = {
       provider:              'AWS',
@@ -32,3 +34,5 @@ else
     config.fog_public     = false
     config.fog_attributes = { 'Cache-Control' => "max-age=#{365.day.to_i}" }
   end
+
+end
