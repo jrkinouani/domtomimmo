@@ -1,5 +1,3 @@
-if Rails.env == 'development'
-
   CarrierWave.configure do |config|
     config.fog_credentials = {
       provider:              'AWS',
@@ -7,7 +5,7 @@ if Rails.env == 'development'
       aws_secret_access_key: '0nU6k30h0zAw1Pv53cVdDnf0/R+eNxDuINlhiyi8',
       region:                'eu-west-1'
     }
-    
+
     config.fog_directory  = 'domtomimmodebug'
     config.fog_public     = false
     config.fog_attributes = { 'Cache-Control' => "max-age=#{365.day.to_i}" }
@@ -20,7 +18,7 @@ if Rails.env == 'development'
   require 'excon'
   Excon.ssl_verify_peer = false
 
-else 
+else
 
   CarrierWave.configure do |config|
     config.fog_credentials = {
@@ -29,10 +27,8 @@ else
       aws_secret_access_key: '9iPHMXDtH0Qzl0fz7/kGWNT+HNHYfUg0qRJGeYOK',
       region:                'eu-west-1'
     }
-    
+
     config.fog_directory  = 'domtomimmoproduction'
     config.fog_public     = false
     config.fog_attributes = { 'Cache-Control' => "max-age=#{365.day.to_i}" }
   end
-
-end
